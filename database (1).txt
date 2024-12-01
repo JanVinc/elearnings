@@ -1,0 +1,53 @@
+-- Insert data into 'courses' table
+INSERT INTO `courses` (`id`, `title`, `description`) VALUES
+(1, 'Calculus', 'Explore advanced calculus topics including integrals, limits, and series.'),
+(2, 'Geometry Basics', 'Learn the fundamentals of geometry, including shapes, angles, and measurements.'),
+(3, 'Statistics and Probability', 'Understand probability, statistics, and data analysis concepts.');
+
+-- Insert data into 'questions' table
+INSERT INTO `questions` (`id`, `course_id`, `question`, `options`, `correct_option`) VALUES
+(1, 1, 'What is the derivative of x^2?', '{"1": "2x", "2": "x^2", "3": "1", "4": "x"}', 1),
+(2, 1, 'What is the integral of x?', '{"1": "x^2/2", "2": "x", "3": "1", "4": "x^2"}', 1),
+(3, 1, 'What is the limit of (x^2 - 1) / (x - 1) as x approaches 1?', '{"1": "1", "2": "2", "3": "0", "4": "Infinity"}', 2),
+(4, 1, 'What is the chain rule in differentiation?', '{"1": "A method for finding the derivative of composite functions", "2": "A rule for integrating polynomials", "3": "A rule for multiplication", "4": "A rule for summation"}', 1),
+(5, 1, 'What is the integral of 1/x?', '{"1": "ln(x)", "2": "x^2", "3": "1", "4": "1/x"}', 1),
+(6, 1, 'The derivative of sin(x) is:', '{"1": "cos(x)", "2": "sin(x)", "3": "x", "4": "-cos(x)"}', 1),
+(7, 1, 'What is the second derivative of x^3?', '{"1": "6x", "2": "3x^2", "3": "x^2", "4": "x^3"}', 2),
+(8, 1, 'The area under the curve of y=x^2 from 0 to 1 is:', '{"1": "1/3", "2": "1/2", "3": "1", "4": "2"}', 1),
+(9, 1, 'What is the limit of sin(x)/x as x approaches 0?', '{"1": "1", "2": "0", "3": "Infinity", "4": "Not defined"}', 1),
+(10, 1, 'What is the product rule in differentiation?', '{"1": "A rule for multiplying derivatives", "2": "A rule for integrating polynomials", "3": "A rule for dividing derivatives", "4": "A rule for sum of derivatives"}', 1),
+(11, 2, 'What is the sum of the interior angles of a triangle?', '{"1": "180?", "2": "90?", "3": "360?", "4": "270?"}', 1),
+(12, 2, 'What is the formula for the area of a circle?', '{"1": "?r^2", "2": "2?r", "3": "?d", "4": "r^2"}', 1),
+(13, 2, 'What is the Pythagorean theorem?', '{"1": "a^2 + b^2 = c^2", "2": "a^2 = b^2 + c^2", "3": "a^3 + b^3 = c^3", "4": "a^2 + b^2 = 2c^2"}', 1),
+(14, 2, 'What is the volume of a sphere?', '{"1": "4/3?r^3", "2": "?r^2", "3": "2?r^2", "4": "?r^3"}', 1),
+(15, 2, 'What is the area of a rectangle?', '{"1": "length x width", "2": "2 x length", "3": "width x height", "4": "length + width"}', 1),
+(16, 2, 'What is the formula for the surface area of a cylinder?', '{"1": "2?r^2 + 2?rh", "2": "?r^2 + 2?rh", "3": "4?r^2", "4": "2?r^2 + h"}', 1),
+(17, 2, 'What is the circumference of a circle?', '{"1": "2?r", "2": "?r^2", "3": "2?r^2", "4": "?r"}', 1),
+(18, 2, 'What is the area of a triangle?', '{"1": "1/2 x base x height", "2": "base x height", "3": "2 x base x height", "4": "base + height"}', 1),
+(19, 2, 'What is the volume of a cube?', '{"1": "side^3", "2": "2 x side", "3": "side^2", "4": "side x height"}', 1),
+(20, 2, 'What is the length of the diagonal of a square?', '{"1": "side?2", "2": "side^2", "3": "2 x side", "4": "side/2"}', 1),
+(21, 3, 'What is the mean of the numbers 1, 2, 3, 4, and 5?', '{"1": "3", "2": "2", "3": "4", "4": "5"}', 1),
+(22, 3, 'What is the probability of flipping a coin and getting heads?', '{"1": "1/2", "2": "1/3", "3": "1/4", "4": "1"}', 1),
+(23, 3, 'What is the variance of the set 1, 2, 3, 4, 5?', '{"1": "2", "2": "1.25", "3": "3", "4": "4"}', 2),
+(24, 3, 'What is the standard deviation of the set 1, 2, 3, 4, 5?', '{"1": "1.41", "2": "2.24", "3": "1.58", "4": "1.22"}', 1),
+(25, 3, 'What is the probability of drawing a red card from a deck of cards?', '{"1": "1/2", "2": "1/4", "3": "1/52", "4": "1/13"}', 1),
+(26, 3, 'If a fair die is rolled, what is the probability of getting a number greater than 4?', '{"1": "1/3", "2": "1/2", "3": "1/6", "4": "1/5"}', 1),
+(27, 3, 'The mean of a data set is:', '{"1": "The average", "2": "The median", "3": "The mode", "4": "The range"}', 1),
+(28, 3, 'What is the mode of the numbers 1, 2, 2, 3, 4?', '{"1": "1", "2": "2", "3": "3", "4": "4"}', 2),
+(29, 3, 'What is the range of the numbers 1, 2, 3, 4, 5?', '{"1": "1", "2": "2", "3": "3", "4": "5"}', 4),
+(30, 3, 'What is the probability of rolling an even number on a standard six-sided die?', '{"1": "1/2", "2": "1/3", "3": "1/4", "4": "1/6"}', 1),
+(31, 3, 'What is the mean of the numbers 1, 2, 3, 4, and 5?', '{"1": "3", "2": "2", "3": "4", "4": "5"}', 1),
+(32, 3, 'What is the probability of flipping a coin and getting heads?', '{"1": "1/2", "2": "1/3", "3": "1/4", "4": "1"}', 1),
+(33, 3, 'What is the variance of the set 1, 2, 3, 4, 5?', '{"1": "2", "2": "1.25", "3": "3", "4": "4"}', 2),
+(34, 3, 'What is the standard deviation of the set 1, 2, 3, 4, 5?', '{"1": "1.41", "2": "2.24", "3": "1.58", "4": "1.22"}', 1),
+(35, 3, 'What is the probability of drawing a red card from a deck of cards?', '{"1": "1/2", "2": "1/4", "3": "1/52", "4": "1/13"}', 1),
+(36, 3, 'If a fair die is rolled, what is the probability of getting a number greater than 4?', '{"1": "1/3", "2": "1/2", "3": "1/6", "4": "1/5"}', 1),
+(37, 3, 'The mean of a data set is:', '{"1": "The average", "2": "The median", "3": "The mode", "4": "The range"}', 1),
+(38, 3, 'What is the mode of the numbers 1, 2, 2, 3, 4?', '{"1": "1", "2": "2", "3": "3", "4": "4"}', 2),
+(39, 3, 'What is the range of the numbers 1, 2, 3, 4, 5?', '{"1": "1", "2": "2", "3": "3", "4": "5"}', 4),
+(40, 3, 'What is the probability of rolling an even number on a standard six-sided die?', '{"1": "1/2", "2": "1/3", "3": "1/4", "4": "1/6"}', 1);
+
+-- Insert data into 'user_courses' table
+INSERT INTO `user_courses` (`id`, `user_id`, `course_id`, `completed`, `score`) VALUES
+(7, 1, 1, 0, NULL),
+(8, 1, 2, 0, NULL);
